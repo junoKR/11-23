@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023.08 vol.61-월간 공진단</title>
+    <style>
+        *{margin:0;padding:0;}
+     /* 전체 선택자 */
+     #music{  /*아이디 선택자*/
+            width: 1230px;
+            height: 350px;
+            background-color: #eee;
+            margin:0 auto;/* 브라우저의 가운데 정렬 */
+            }
+         /* 하위 선택자-띄어쓰기 */
+     #music .title{
+        width: 100%;
+        height: 50px;
+        background-color: #ddd;
+     }
+     #music .title h2{
+        float:left; /*왼쪽에 배치*/
+     }
+     #music .title p{
+        float:right; /*오른쪽에 배치*/
+     }
+     #music .banner{
+        width: 100%;
+        height:300px;
+        background-color: antiquewhite;
+     }
+     #music .banner .box{
+        width: 282px;
+        height: 282px;
+        background-color: aquamarine;
+        float:left;
+        margin:10px 12px; /*바깥쪽 여백:위아래(10px)좌우(12px)*/
+        background-position:center;/*이미지 가운데배치*/
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     #music .banner div:first-child{
+        background-image: url(img/banner1.jpg);
+     }
+     #music .banner div:nth-child(2){
+        background-image: url(img/banner2.jpg);
+     }
+     #music .banner div:nth-child(3){
+        background-image: url(img/banner3.jpg);
+     }
+     #music .banner div:last-child{ /*last child=nth-child(4)*/
+        background-image:url(img/banner4.jpg);
+     }
+     #music .banner .box p{
+        background-color: rgba(0,0,0,0.5);
+        /* r red g green b blue / a alpha:투명도 */
+        width: 100%;
+        height: 100%;
+        color:#fff;
+        font-size: 20px;
+        padding-top:180px;
+        padding-left: 20px;
+        box-sizing: border-box ; /*padding을 넣어도 .box의 크기는 고정*/
+        /* display: none; 이었음 아래랑 차이 비교*/
+        opacity:0; 
+        transition:all 2s;
+     }
+     #music .banner .box p span{
+        font-size: 14px;
+     }
+    /* .box에 마우스 오버하면 자식객체 p 영역 보임 */
+    #music .banner .box:hover p{
+       /*  display: block; 이었음 아래랑 비교 */
+       opacity: 1;
+    }
+    </style>
+</head>
+<body>
+  <div id="music">
+     <div class="title">
+        <h2>새음반</h2>
+        <p><img src="img/plus.png" alt="더하기 버튼"> 
+     </p>
+     </div>
+     <div class="banner">
+        <div class="box">
+            <p>김철진 가야금[강홍태류 가야금신조]<br>
+                <span>김철진</span><br>
+                <img src="img/arrow.png" alt="화살표">
+            </p>
+        </div>
+        <div class="box">
+            <p>저 건너<br>
+            <span>지유정</span><br>
+                <img src="img/arrow.png" alt="화살표">
+            </p>
+        </div>
+        <div class="box">
+            <p>꽃이 지네<br>
+            <span>최예림</span><br>
+                <img src="img/arrow.png" alt="화살표">
+            </p>
+        </div>
+        <div class="box">
+            <p>하나된 우리<br>
+            <span>Bosun lee,
+                Zero(제로)
+            </span><br>
+                <img src="img/arrow.png" alt="화살표">
+            </p>
+        </div>
+     </div>
+  </div>
+</body>
+</html>

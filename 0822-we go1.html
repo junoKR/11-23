@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>we go 1</title>
+    <style>
+        *{margin:0;padding:0;}
+     .parent{
+        width: 1500px; height: 800px;
+       
+        margin: 0 auto;
+     }
+     .box{
+        width: 700px; height:500px;
+        margin:15px;
+        float: left; 
+     } 
+     .box .photo{
+        width: 700px; height: 500px;
+     }
+     .b1 img{width: 100%;height: 100%;
+      }
+     .b2 img{ width: 100%;height: 100%;
+     }
+    .box:hover .photo{
+        transform: scale(1.2);
+        transition: 2s;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box">
+            <div class="photo b1">
+                <img src="img/wego1.png" alt="">
+            </div>
+        </div>
+        <div class="box b2">
+            <div class="photo b2">
+                <img src="img/wego2.png" alt="">
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

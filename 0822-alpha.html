@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알파색체</title>
+    <style>
+        *{margin:0;padding:0;}
+    .parent{
+        width: 1300px; height: 300px;
+        position:inline block;
+        margin:0 auto;
+    }   
+    .box{
+        width: 300px;height:300px;
+        background-repeat: no-repeat;
+        margin:10px;
+        float: left;
+        text-align: center;
+    }
+    p{
+        width: 100%; height: 100%;
+        padding-top:130px;
+        opacity: 0;
+        transition: all 2s;
+        background-color: rgba(0,0,0,0.5);
+        box-sizing: border-box;
+    }
+    .b1{
+        background-image: url(img/pro_1.jpg);
+    }
+    .b2{
+        background-image: url(img/pro_2.jpg);
+    }
+    .b3{
+        background-image: url(img/pro_3.jpg);
+    }
+    .box:hover p{
+        opacity:1;
+        color:white;
+    } 
+    #header{
+        height: 50px; background-color: black;
+    }
+    #nav1{
+        display: inline-block;
+    }
+    #nav2{
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <div id="headerimg"><img src="img/alpa colors.png" alt="">
+    </div>
+    <div id="main">
+        <div id="header">
+            <ul id="nav1">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">제품소개</a></li>
+                <li><a href="">알파소식</a></li>
+                <li><a href="">자료실</a></li>
+                <li><a href="">고객센터</a></li>
+            </ul>
+        </div>
+    <div id="more">
+        <ul id="nav2">
+            <li><a href="">인스타그램</a></li>
+            <li><a href="">블로그</a></li>
+            <li><a href="">ENG</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="parent"> 
+     <div class="box b1">
+        <p> <span>Poster color</span><br>
+            <span>포스터칼라</span><br>
+            <br>
+            <img src="img/plus.png" alt="plus">
+        </p>
+     </div>
+     <div class="box b2">
+     <p><span>Wator Color</span><br>
+        <span>수채화</span><br>
+        <br>
+        <img src="img/plus.png" alt="plus">
+        </p>
+     </div>
+     <div class="box b3">
+        <p> <span>Acrylic Colors</span><br>
+            <span>아크릴물감</span><br>
+            <br>
+            <img src="img/plus.png" alt="plus">
+        </p>
+    </div>
+  </div>
+</body>
+</html>

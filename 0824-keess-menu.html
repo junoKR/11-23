@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keess 네비게이션</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        nav{width:900px; margin: 30px auto;}
+        li{list-style: none;}
+        a{text-decoration: none;color:black;
+        }
+        nav > ul{
+            display:flex;
+            justify-content: space-between;
+        }
+        nav > ul > li > a {
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 24px;
+
+        }
+        nav > ul > li > a:hover{
+            color:violet;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">회사소개</a>
+                <ul class="sub">
+                    <li><a href="#">KEESS</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">학습솔루션</a>
+                <ul class="sub">
+                    <li><a href="#">학습플랫폼</a></li>
+                    <li><a href="#">운영/보안</a></li>
+                    <li><a href="#">부가서비스</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">교육컨텐츠</a>
+                <ul class="sub">
+                    <li><a href="#">온라인교육과정</a></li>
+                    <li><a href="#">마이크로러닝</a></li>
+                    <li><a href="#">컨텐츠 제작&제휴</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">기업교육</a>
+                <ul class="sub">
+                    <li><a href="#">사업주훈련과정</a></li>
+                    <li><a href="#">구독형기업교육</a></li>
+                    <li><a href="#">오프라인교육</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">법정의무교육</a>
+            </li>
+            <li>
+                <a href="#">정부지원사업</a>
+                <ul class="sub">
+                    <li><a href="#">HRD FLEX</a></li>
+                    <li><a href="#">기업직업훈련카드</a></li>
+                    <li><a href="#">국민내일배움카드</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

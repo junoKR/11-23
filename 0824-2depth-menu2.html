@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bera 메뉴</title>
+    <style>
+       *{margin: 0;padding: 0;}
+       li{list-style: none;}
+       a{text-decoration: none; color:#333;}
+
+       nav{
+        width: 800px;
+        margin: 30px auto;
+        
+       }
+       /*주메뉴 직속 자식 선택자(>)- 아래 네비 띄어쓰고 > 띄어쓰고-*/
+       nav > ul{ text-align: center;
+            display:flex;
+            justify-content: space-between;
+       }
+       nav > ul > li > a{
+        white-space:nowrap; /*글바꿈 방지*/
+        font-weight: bold;
+        padding:5px 50px;
+        padding-bottom:20px;
+        display: block;
+       }
+       nav .sub{
+        display: none;
+        padding:10px;
+        margin-bottom:5px;
+       }
+       nav .sub li {
+        padding: 5px;
+       
+        margin-bottom: 5px;
+       }
+       nav .sub li a{
+        font-size: 13px;
+        color:rgb(167, 167, 167);
+       }
+       nav .sub li a:hover{
+        color:pink;
+       }
+       nav:hover ul li .sub{ /*주메뉴에 마우스 오버하면 전체 서브메뉴 나타남*/
+        background-color: rgb(253, 227, 193); display: block; height:300px
+       }
+       .c1, .c2{display: none;}
+    </style>
+</head>
+<body>
+    <div class="c1"><img src="img/bera qrcode.png" alt=""></div>
+    <div class="c2"><img src="img/knotted bera.png" alt=""></div>
+    <nav>
+        <ul>
+            <li>
+             <a href="#">MENU</a>
+              <ul class="sub">
+                <li><a href="#">아이스크림</a></li>
+                <li><a href="#">아이스크림케이크</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">커피</a></li>
+                <li><a href="#">디저트</a></li>
+            </li> <!--주메뉴--> 
+             </ul>
+                <li><a href="#">영양 성분 및 알러지</a>
+                 <ul class="sub">
+                    <li><a href="#">아이스크림</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">커피</a></li>
+                 </ul><!--서브메뉴-->
+                </li>
+                <li>
+                    <a href="#">EVENT</a>
+                    <ul class="sub"><!--이벤트-->
+                        <li><a href="#">진행중이벤트</a></li>
+                        <li><a href="#">당첨자발표</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">STORE</a>
+                    <ul class="sub"> <!--서브메뉴-->
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">단체주문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                    <ul class="sub"> <!--ABOUT end-->
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">점포개설문의</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </li>
+        </ul>
+    </nav>
+</body>
+</html>

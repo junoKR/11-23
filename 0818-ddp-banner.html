@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddp banner</title>
+    <style>
+        /*  "*" 전체선택자 모든 태그의 여백0*/
+        *{ margin:0; padding:0;}
+     #ddp{
+        width: 1100px;
+        height:510px;
+        background-color: #eee;
+        margin-top:100px;
+        /* 브라우저의 가운데로 정렬 */
+        margin: auto;
+     }
+     .box{
+        width: 330px;
+        height: 220px;
+        margin: 15px;
+        border:1px solid #666;
+        /* display:inline-block; */
+        float:left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+     }
+     .b1{
+        background-image: url(img/apo.jpg);
+     }
+     .b2{
+        background-image: url(img/black_hole.jpg);
+     }
+     .b3{
+        background-image: url(img/earth-1756274_640.jpg);
+     }
+     .b4{
+        background-image: url(img/krown.jpg);
+     }
+     .b5{
+        background-image: url(img/orion.jpg);
+     }
+     .b6{
+        background-image: url(img/pulsar.jpg);
+     }
+     .box p{
+            width: 100%;
+            height: 100%;
+            /* r(red),g(green),b(blue),a(alpha)-투명도 */
+            background-color: rgba(0,0,0,0.1);
+            text-align: center;
+            line-height: 255px;
+            display:none;
+     }
+     /* .box영역에 마우스 오버 했을 때 p태그 영역 보임 */
+     .box:hover p{
+            display: block;
+     }
+         </style>
+</head>
+<body>
+    <h1>ddp</h1>
+    <div claas="box"id="ddp">
+     <div class="box b1">
+        <p class="hover">
+           <img src="img/www+withe_icon_48px.png"alt="유튜브 아이콘">
+        </p>
+    </div>
+     <div class="box b2">
+        <p class="hover">
+            <img src="img/www+withe_icon_48px.png"alt="유튜브 아이콘">
+        </p>
+    </div>
+     <div class="box b3">
+         <p class="hover">
+            <img src="img/www+withe_icon_48px.png"alt="유튜브 아이콘">
+        </p>
+    </div>
+     <div class="box b4">
+        <p class="hover">
+            <img src="img/www+withe_icon_48px.png"alt="유튜브 아이콘">
+        </p>
+    </div>
+     <div class="box b5">
+        <p class="hover">
+            <img src="img/www+withe_icon_48px.png" alt="유튜브 아이콘">
+        </p>
+    </div>
+     <div class="box b6">
+        <p class="hover">
+            <img src="img/www+withe_icon_48px.png"alt="유튜브 아이콘">
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1차원 메뉴</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration: none;
+          color:#212121; padding-bottom: 8px; /* 패딩바텀 a자식 li a 에게 글자-밑줄 간격*/
+          }
+        body{background-color: #f8f8f8;}
+        nav{width: 900px; margin:50px auto 0;}
+        nav ul{
+             display: flex;
+             flex-flow: row nowrap; /*줄바꿈 x .기본값.*/
+             justify-content: space-between; 
+        }
+        nav ul li a{
+            padding-top:13px; 
+            font-size:20px;  position: relative;
+        }
+        nav ul li a::after{
+            content:""; /*내용*/
+            width: 100%; height: 3px;
+            background-color: red;
+            position: absolute;
+            bottom: 0; /*a태그가 위치의 기준이됨*/
+            left:0; display: none;
+        }
+        nav ul li a:hover:after{
+          display: block;
+        }  
+        nav ul li a:before{
+            content:"";
+            position:absolute;
+            top:0;
+            width: 8px; height:8px;
+            background-color: red;
+            border-radius: 100%;
+            left: 50%;
+            transform:translateX(-50%);
+            animation: ball 1s infinite; /*키프레임즈인 볼에 에니메이션 코드: 이름 시간 무한*/
+            display: none;
+        }
+        /* 키프레임즈를 사용한 위아래 이동 애니메이션 */
+        @keyframes ball/*ball은 내가 짓는 임의의 이름*/{
+            0%{margin-top:8px;}
+            50%{margin-top:0;}
+            100%{margin-top:8px;}
+        }
+        nav ul li a:hover:before{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+     <ul>
+        <li><a href="#">요금제</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">티플러스</a></li>
+        <li><a href="#">데이터 로밍</a></li>
+        <li><a href="#">내 정보</a></li>
+     </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1차원 메뉴</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration: none;
+          color:#212121; padding-bottom: 8px; /* 패딩바텀 a자식 li a 에게 글자-밑줄 간격*/
+          }
+        body{background-color: #f8f8f8;}
+        nav{width: 900px; margin:50px auto 0;}
+        nav ul{
+             display: flex;
+             flex-flow: row nowrap; /*줄바꿈 x .기본값.*/
+             justify-content: space-between; 
+        }
+        nav ul li a{
+            font-size:20px;  position: relative;
+            padding-bottom: 13px;
+        }
+        nav ul li a:after{
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: green;
+            position:absolute;
+            bottom: 0; left:0;
+            transition: width 0.5s;
+        }
+        nav ul li a:hover:after{
+            width:100%
+        }
+    </style>
+</head>
+<body>
+    <nav>
+     <ul>
+        <li><a href="#">요금제</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">티플러스</a></li>
+        <li><a href="#">데이터 로밍</a></li>
+        <li><a href="#">내 정보</a></li>
+     </ul>
+    </nav>
+</body>
+</html>

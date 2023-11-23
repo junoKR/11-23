@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>we go banner</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Tilt+Prism&family=Tulpen+One&display=swap');
+     *{margin:0; padding:0;}
+     .wrap{
+        width: 1760px;margin:0 auto;
+     }   
+     .wrap .ali, /*그룹 선택자-콤마(,) 이용*/
+     .wrap .bata{
+        width: 860px; height: 560px;
+        float:left; border: 1px solid #f00;
+        box-sizing: border-box;/*padding border 적용해도 width height값 변경 없도록 고정*/ 
+        position: relative;
+        overflow: hidden;
+    }
+     .wrap div .image{width: 120%; height: 120%;
+                    transition: all 0.5s; position: absolute;
+    }
+      img{width:100%;}/* 모든 img태그는 부모 크기에 이미지 크기르 맞춤 */
+     .wrap .ali:hover .image, /* 부모객체 .aili와 .bata에 마우스 오버하면 자식 객체 image가 1.3배 확대 */
+     .wrap .bata:hover .image{
+        transform: scale(1.3);
+     }
+     .wrap .ali{margin-right: 30px;}
+     /* wrap 안의 div 안의 .image와 .title은 형제관계임, 형제 객체끼리 겹칠 때 position:absolute사용 */
+     .wrap div .title{
+        position:absolute;
+        width: 100%; height:100%;
+        background-color: rgba(0,0,0,0.5);
+        text-align: center; font-size: 90px;
+        line-height: 560px;
+        color:white;
+        opacity:0;
+        transition: all 0.5s;
+        font-family: 'Tilt Prism',cursive;
+     }
+     /* .ali 영역이나 .bata 영역에 마우스 오버했을때 .title이 서서히 나타남 */
+     .wrap .ali:hover .title,
+     .wrap .bata:hover .title{
+        opacity: 1;    
+     }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="ali">
+         <div class="image">
+            <img src="img/wego1.png" alt="ali">
+            </div>
+            <div class="title">
+                <h1>Ali</h1>
+            </div>
+         </div>
+        <div class="bata">
+         <div class="image">
+            <img src="img/wego2.png" alt="bata">
+            </div>
+            <div class="title">
+                <h1>bata</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

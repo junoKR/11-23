@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>css연습-선택자</title>
+    <style>
+        /* 태그 선택자 */
+        h1{color: #C70039;
+           font-style:italic}
+        div{
+            width:200px;
+            height:200px;
+            background-color:#FFABAB;
+            border:2px dashed #E98EAD;
+            border-radius:20px;
+            margin:10px;  /*여백  */ 
+            text-align: center; 
+            font-weight:bold  /*굵게*/
+             
+        }
+        /* 클래스 선택자 */ 
+        .box1{background-color:#09eecc;
+                color:#deee00;
+                text-shadow:1px 1px 1px #000;
+                font-style:italic;
+                box-shadow:-5px -5px 3px 5px #4f709c;
+        }
+        .box2{background-color: #C70039;
+                font-size:30px;
+                box-shadow:-5px -5px 3px 5px #4f709c;
+        }
+        .box3{box-shadow:-5px -5px -5px black;
+             box-shadow:none;            
+             box-shadow:-5px -5px 3px 5px #4f709c;
+    }
+        .box4{background-color: azure;
+                font-weight:bold;
+                font-size:20px;
+                font-style:italic;    
+                box-shadow:-5px -5px 3px 5px #4f709c;
+        }
+        .box5{background-color: coral;
+                border-radius:500px;
+                font-size:6px;
+                box-shadow:-5px -5px 3px 5px #4f709c;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>클래스 선택지 연습</h1>
+    <div class="box1">첫 번째 객체</div>
+    <div class="box2">두 번째 객체</div>
+    <div class="box3">세 번째 객체</div>
+    <div class="box4">네 번째 객체</div>
+    <div class="box5">다섯 번째 객체</div>    
+</body>
+</html>

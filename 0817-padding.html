@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding패딩=안쪽여백</title>
+    <style>
+        div{
+            width: 270px;
+            height: 200px;
+            background-color: rgb(108, 255, 133);
+            border:1px solid #ff000f;
+        }
+        #m1{
+            padding:20px; /*상하좌우 모두20px*/
+        }
+        #m2{
+            padding:30px 40px;/*상하:30px,좌우:40px*/
+        }
+        #m3{
+            padding:50px 30px 20px;/*위:50px, 좌우:30px 아래 20px*/
+        }
+        #m4{
+            padding:25px 37px 15px 34px;/*위 부터 시계방향*/
+        }
+        #m5{
+            padding-top: 20px;
+        }
+        #m6{
+            padding-bottom: 20px;
+        }
+        #m7{
+            padding-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>안쪽여백 사용하기</h1>
+    <div id="m1">안쪽여백:20px</div>
+    <div id="m2">안쪽여백:
+        위아래:30px,좌우:40px</div>
+    <div id="m3">안쪽여백:
+        위50px, 좌우:30px, 아래:20px</div>
+    <div id="m4">안쪽여백:
+        위25px, 오른쪽 37px, 아래:15px, 왼쪽:34px</div>
+    <div id="m5">안쪽여백:
+        위쪽만20px</div>
+    <div id="m6">안쪽여백:
+        아래만 20px</div>
+    <div id="m7">안쪽여백:
+        왼쪽만 20px</div>
+</body>
+</html>

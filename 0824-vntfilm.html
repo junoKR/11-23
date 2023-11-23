@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vnt</title>
+    <style>
+     *{margin:0;padding:0;}
+     a{text-decoration: none;}
+     li{list-style: none;}
+     body{background-color: #fff5ee;}
+     nav{
+        
+        float: right;
+        margin-top: 50px;
+        margin-right: 90px;
+     }
+     nav ul{
+            height: 20px;
+            width: 180px;
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+     }
+
+    nav ul li {
+        padding:10px 0 10px 0;
+        width: 100px; height: 20px;
+        margin-right: 10px;
+    }
+    nav ul li a{
+            margin-left:20px;
+            position: relative;
+            font-size: 25px;
+            color:black;
+            font-weight: bolder;
+            padding-left: 20px;
+            display: block;
+    }
+    nav ul li a:hover{
+        color:#ff6900;
+        transition: 0.4s;
+    }
+    nav ul li a:hover:before{
+        width: 8px; height: 8px;
+        content: "";
+        border: 100%;
+        background-color:#ff6900;
+        position:absolute;
+        border-radius: 100%;
+        top:50%;
+        transition: 0.7s;
+        left:0px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">people</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">rentaltudio</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

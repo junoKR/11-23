@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닷밀 메뉴</title>
+    <style>
+        * { margin:0; padding:0; }
+        li { list-style:none; }
+        a { text-decoration: none; color:#333; }
+        body { background-color: #eee;}
+        nav { 
+            float:right;          /*브라우저의 오른쪽에 배치*/
+            margin-right: 100px;    /*위여백*/
+            margin-top:50px;     /*오른쪽 여백*/
+            width:660px;      /*메뉴 전체 가로길이*/
+        }
+        nav ul {
+            /* ul의 자식 객체 li를 일정한 간격으로 정렬 */
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul li a {
+            /* 상하여백 : 7픽셀, 좌우 : 20픽셀 */
+            padding:7px 20px;
+            /* 모서리 둥글게 */
+            border-radius: 20px;
+            /* 글자 크기 */
+            font-size:20px;
+            /* 메뉴의 배경색 */
+            background-color: #fff;
+            /* 0.5초 동안 애니메이션 */
+            transition:all 0.5s;
+        }
+        /* 메뉴에 마우스오버했을 때 스타일 지정 */
+        nav ul li a:hover {
+            /* 배경색 변경 */
+            background-color: #30A2FF;
+            /* 글자색 변경 */
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">WORKS</a></li>
+            <li><a href="#">BOARD</a></li>
+            <li><a href="#">ACAREER</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 연습(띄우다)</title>
+    <style>
+        *{margin:0;padding:0;}
+         .parent{
+            width:1000px;
+            height:300px;
+            margin:10px auto;
+            background-color: rgb(255, 255, 13);
+         }
+         .child{
+            width: 200px;
+            height:200px;
+            background-color: aqua;
+            margin:5px;
+            font-size:40px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+         }
+         /* dkdlelrk p1인 객체의 자식객체한테 float 적용 */
+         #p1 .child{
+            float:left; /*왼쪽을 기준으로 객체 나열*/
+         }
+         #p2 .child{
+            float:right; /*오른쪽 기준으로 객체 나열*/
+         }
+         #p3 .c1{
+             float:left;
+         }
+    </style>
+</head>
+<body>
+    <div class="parent" id="p1">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>  
+     </div>
+    <div class="parent" id="p2">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+    </div>
+    <div class="parent" id="p3">
+      <div class="child c1">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+    </div>
+</body>
+</html>

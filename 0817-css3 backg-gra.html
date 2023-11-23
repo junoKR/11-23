@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css연습-아이디 선택자</title>
+    <style>
+        /* 태그선택자 */
+        h1{text-decoration:underline;}
+        div{
+            border:1px double #000;
+            width:400px;
+            height:400px;
+            margin:30px;
+            text-align:center;
+            line-height:400px;
+            font-size:50px;
+            font-style:bold;
+        }
+        
+        /* 아이디 선택자 */
+
+        #contents1{
+            border-radius:0 0 30px 30px;
+        }
+        #contents2{
+            border-radius:20px 80px 0 0;
+            /* 그레디언트:각도,색상1 색상2 */
+            background: linear-gradient(122deg,rgb(171, 249, 255)
+            ,#5e91ff);
+
+        }
+        #contents3{
+            background-image: url(img/earth-1756274_640.jpg)
+        }
+        #contents4{
+            background-image:url(img/pulsar.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover
+        }
+        #contents5{
+            background-image: url(img/yotube_ion.png);
+            background-position:center;
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>아이디 선택자</h1>
+    <div id="contents1">one</div>
+    <div id="contents2">two</div>
+    <div id="contents3">three</div>
+    <div id="contents4">four</div>
+    <div id="contents5">five</div>
+</body>
+</html>

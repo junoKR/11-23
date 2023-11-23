@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position연습</title>
+        <style>
+            .parent{
+                width: 1000px;
+                height: 400px;
+                background-color: #ddd;
+                position: relative;
+            }
+            .child{
+                width:260px;
+                height:260px;
+                display:inline-block;
+                background-color: #91cbe4;
+            }
+            /* 마지막 child 객체는 fixed */
+            .last{
+                position: fixed;
+                right:20px;
+                bottom: 20px;
+                width:80px;
+                height:80px;
+                border-radius:100% ;
+                line-height:80px;
+                font-size:14px;
+                text-align: center;
+            }
+            .c1{
+                position:absolute;
+                top:20px;
+                right:20px;
+            }
+            .c2{
+                position:absolute;
+                top:40px;
+                right:40px;
+                background-color: red;
+            }
+            .c3{
+                position:absolute;
+                top:60px;
+                right:100px;
+                background-color:pink;
+            }
+        </style>
+</head>
+<body>
+ <h1>position연습</h1>
+    <div class="parent">
+     <div class="child c1">자식객체1</div>
+     <div class="child c2">자식객체2</div>
+     <div class="child c3">자식객체3</div>
+     <div class="child last">자식객체4</div> 
+    </div>  
+</body>
+</html>

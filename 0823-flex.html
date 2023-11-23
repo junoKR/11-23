@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible 사용하기</title>
+    <style>
+     *{margin:0; padding:0;}   
+     .parent{
+        width: 1000px; height: 300px;
+        background-color: #efefef;
+        margin: 10px auto;
+     }
+     .parent .child{
+        text-align: center;
+        width: 200px; height: 200px;
+        background-color: #40f8ff;
+        font-size: 30px;
+        line-height:200px;
+        border:1px solid blue;
+     }
+     .p1 .child {float:left;}/*.p1 영역의 자식 객체 .child 를 가로로 나열*/
+     .p2{display: flex; margin-top: 200px;} /*.p2 영역의 자식 객체 .child를 가로로 나열*/
+     .p3 .child{width: 150px;}
+     .p3{display: flex;
+        justify-content: center;
+    }
+    
+    .p4{display: flex;
+        justify-content: space-around; /*가로배치 종류*/
+    }
+    
+    .p5{display: flex;
+        justify-content: space-between;
+    }
+    
+    .p6{display: flex;
+        justify-content: flex-start;
+    }
+    
+    .p7{display: flex;
+        justify-content: flex-end;
+    }
+     .p3 .child, .p4 .child, .p5 .child, .p6 .child, .p7 .child {width:150px}
+     .vertical{height:400px;}
+     .vertical .child{height:150px;}
+     .p8{display: flex;
+         flex-wrap: wrap; /*줄바꿈 허용, 기본값:nowrap*/
+         align-content: flex-start;
+    }
+    .p9{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+    .p10{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;  
+    }
+    .p11{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .p12{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    </style>
+</head>
+<body>
+ <div class="parent p1">
+  <div class="child">child1</div>
+  <div class="child">child2</div>
+  <div class="child">child3</div>
+  <div class="child">child4</div>
+  <div class="child">child5</div>
+ </div>
+ <div class="parent p2">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p3">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p4">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p5">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p6">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p7">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p8 vertical">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p9 vertical">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p10 vertical">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p11 vertical">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+   <div class="parent p12 vertical">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child5</div>
+   </div>
+</body>
+</html>

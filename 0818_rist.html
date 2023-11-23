@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list 연습</title>
+    <style>
+        *{margin:0; padding:0;}
+        .list{
+            width:500px;
+            margin:0 auto;
+        }
+        .list ul li {
+            font-size:30px;
+            list-style:url(img/ml.gif);
+        }
+        /* 짝수번째 목록에 배경색 넣기 */
+        .list ul li:nth-child(even){
+            background-color:#e8ffce;
+        }
+        /* 홀수번째 목록에 밑줄 */
+        .list ul li:nth-child(odd){
+            text-decoration: underline;
+        }
+        /* 첫번째 목록에 글자색 변경 */
+        .list ul li:first-child{
+            color:red;
+        }
+        /* 마지막 목록에 글자색 변경 */
+        .list ul li:last-child{
+            color:orange;
+            font-weight: bold;
+        }
+        /* 3 6 9 번째 목록에 그림자 넣기 */
+        .list ul li:nth-child(3n){
+            text-shadow:1px 1px 1px yellow;
+        }
+        /* 1~5번까지의 목록에 기울임 */
+        .list ul li:nth-child(-n+5){
+            font-style:italic;
+        }
+        /* 8~10번 목록만 스타일 넣기 */
+        .list ul li:nth-last-child(-n+3){
+            width:100px;
+        }
+</style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li>목록1</li>
+            <li>목록2</li>
+            <li>목록3</li>
+            <li>목록4</li>
+            <li>목록5</li>
+            <li>목록6</li>
+            <li>목록7</li>
+            <li>목록8</li>
+            <li>목록9</li>
+            <li>목록10</li>
+        </ul>
+    </div>
+</body>
+</html>

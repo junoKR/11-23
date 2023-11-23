@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 연습</title>
+    <style>
+        *{margin:0;padding:0;}
+        .box{
+            width: 300px;height:300px;
+            float:left; margin:20px; border:3px solid black;
+            border-radius: 20px; overflow: hidden;
+            
+        }
+        .box .photo{
+            width: 20%;height: 20%;
+            transition:all 0.5s;/*모든 속성 값이 부드럽게 변함.0.5초동안*/
+            }
+        .box .photo img{width: 100%;
+        }
+        /* .box의 .photo 크기 조절 */
+        .box:hover .photo{
+            transform: scale(1.2);
+        }
+       /* .box에 마우스 오버 하면 이미지 크기가 1.2(=n)배 커지는 애니메이션 */
+       .box:hover .photo{
+        transform:rotate(720deg);
+       }
+    </style>
+</head>
+<body>
+    <div class="box b1">
+        <div class="photo">
+            <img src="img/star1.png" alt="">
+        </div>
+    </div>
+    <div class="box b2">
+        <div class="photo">
+            <img src="img/star2.png" alt="">
+        </div>
+    </div>
+    <div class="box b3">
+        <div class="photo">
+            <img src="img/star3.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
